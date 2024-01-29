@@ -8,4 +8,5 @@ Things you may want to cover:
 * How to use
 
 /live - gives you live logs
+
 /show - Event listner
