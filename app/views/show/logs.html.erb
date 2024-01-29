@@ -1,0 +1,9 @@
+<h1>Live Log Streamer</h1>
+<div id="target"></div>
+<script type="text/javascript">
+	var sse = new EventSource('/live');
+	sse.addEventListener('log-stream', function (e) {
+		document.getElementById('target').innerHTML += "<p>" + e.data + "</p>";
+	});
+</script>
+
